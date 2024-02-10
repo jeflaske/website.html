@@ -1,0 +1,39 @@
+<!DOCTYPE html><!--Jeffery Laskey-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>User Input</title>
+    <link rel="stylesheet" href="style.css"><!--Designing-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+            <h2>Navigation</h2>
+            <a href="./index.html">Home</a>
+        <a href="./boards.html">Boards</a>
+        <a href="./strings.html">User Input</a>
+        <a href="./games.html">Game</a>
+        <a href="./event.html">Meme</a>
+        <a href="./table.html">Table</a>
+            <!-- Add links to other pages as needed -->
+        </nav>
+        <p>I would like to get some basic information from you for a secret message!</p><!--Title-->
+      </header>
+      <!--This is where you input you basic information-->
+        <form>
+        <input type="text" name="file-name" id="first" onchange="buttonClick()" placeholder="First Name" required=required><br><br><!--First Name-->
+        <input type="text" name="file-name" id="last" onchange="buttonClick()" placeholder="Last Name" required=required ><br><br><!--Last Name-->
+        <input type="text" name="file-name" id="full" placeholder="Full Name" maxlength="20"><br><br><!--Displaying Full Name-->
+        <input type="text" id="zip" placeholder="Zip Code" maxlength="5" name="zip" required="required"><!--Zip Code-->
+    </p><br><br> <!--These help with spaces-->
+    <button type="submit" onclick="mymessage()">Submit </button>
+    
+  </form>
+      </div>
+      <p class="info-txt"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
